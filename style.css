@@ -1,0 +1,45 @@
+
+.sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #2c3e50;
+    padding: 20px;
+    color: white;
+}
+
+.sidebar h2 {
+    padding: 20px 0;
+    font-size: 22px;
+    color: #ecf0f1;
+    border-bottom: 1px solid #7f8c8d;
+}
+
+.sidebar button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    color: #ecf0f1;
+    background: #34495e;
+    text-align: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.sidebar button:hover {
+    background: #2980b9;
+}
+
+.save-button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.button-container {
+    display: none; 
+}

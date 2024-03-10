@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="300" viewBox="0 0 600 300">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 50px;
+        font-family: Arial;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <text id="VISIBLE" class="cls-1" transform="translate(3.806 205.264) scale(3.081)">VISIBLE</text>
+</svg>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CommED</title>
+    <link rel="stylesheet" href="/css/style.scss">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    
+</head>
+<body>
+
+      
+    <div class="topbar">
+
+
+        <button  id="perspectiveButton" class="topbar-button">
+            <div class="icon-container">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="white" d="M234.5 5.7c13.9-5 29.1-5 43.1 0l192 68.6C495 83.4 512 107.5 512 134.6V377.4c0 27-17 51.2-42.5 60.3l-192 68.6c-13.9 5-29.1 5-43.1 0l-192-68.6C17 428.6 0 404.5 0 377.4V134.6c0-27 17-51.2 42.5-60.3l192-68.6zM256 66L82.3 128 256 190l173.7-62L256 66zm32 368.6l160-57.1v-188L288 246.6v188z"/></svg>
+            </div>
+            <div class="text-container">
+                <span>3D View</span>
+            </div>
+          </button>
+
+          <button  id="captureAndConvertButton" class="topbar-button">
+            <div class="icon-container">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="white" d="M48 96V416c0 8.8 7.2 16 16 16H384c8.8 0 16-7.2 16-16V170.5c0-4.2-1.7-8.3-4.7-11.3l33.9-33.9c12 12 18.7 28.3 18.7 45.3V416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H309.5c17 0 33.3 6.7 45.3 18.7l74.5 74.5-33.9 33.9L320.8 84.7c-.3-.3-.5-.5-.8-.8V184c0 13.3-10.7 24-24 24H104c-13.3 0-24-10.7-24-24V80H64c-8.8 0-16 7.2-16 16zm80-16v80H272V80H128zm32 240a64 64 0 1 1 128 0 64 64 0 1 1 -128 0z"/></svg>
+            </div>
+            <div class="text-container">
+                <span>Save</span>
+            </div>
+          </button>
+        
+          <button  id="toggleEdgeModeButton" class="topbar-button">
+            <div class="icon-container">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="white" d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg>
+
+            </div>
+            <div class="text-container">
+                <span>Add Edge (Q)</span>
+            </div>
+          </button>
+
+
+          
+          <button  id="snapToXYButton" class="topbar-button">
+            <div class="icon-container">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+                    <defs>
+                      <style>
+                        .cls-1 {
+                          font-size: 50px;
+                          font-family: Arial;
+                          font-weight: 700;
+                          
+                        }
+                      </style>
+                    </defs>
+                    <text id="XY" class="cls-1" transform="translate(1.282 229.253) scale(4.424)">XY</text>
+                  </svg>
+            </div>
+            <div class="text-container">
+                <span>XY Plane</span>
+            </div>
+          </button>
+
+
+
+          <button  id="snapToYZButton" class="topbar-button">
+            <div class="icon-container">
+                <svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+                    <defs>
+                      <style>
+                        .cls-1 {
+                          font-size: 50px;
+                          font-family: Arial;
+                          font-weight: 700;
+                        }
+                      </style>
+                    </defs>
+                    <text id="YZ" class="cls-1" transform="translate(11.282 229.253) scale(4.424)">YZ</text>
+                  </svg>
+                  
+            </div>
+            <div class="text-container">
+                <span>YZ Plane</span>
+            </div>
+          </button>
+
+          <button  id="snapToXZButton" class="topbar-button">
+            <div class="icon-container">
+                <svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+                    <defs>
+                      <style>
+                        .cls-1 {
+                          font-size: 50px;
+                          font-family: Arial;
+                          font-weight: 500;
+                          fill: white; 
+                        }
+                      </style>
+                    </defs>
+                    <text id="XZ" class="cls-1" transform="translate(8.282 229.253) scale(4.424)">XZ</text>
+                  </svg>
+                  
+            </div>
+            <div class="text-container">
+                <span>XZ Plane</span>
+            </div>
+          </button>
+
+
+        <button  id="nextLayerButton" class="topbar-button">
+            <div class="icon-container">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="white"  d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/></svg>
+
+            </div>
+            <div class="text-container">
+                <span>Next Layer</span>
+            </div>
+          </button>
+
+          <button  id="previousLayerButton" class="topbar-button">
+            <div class="icon-container">
+                
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="white" d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+
+            </div>
+            <div class="text-container">
+                <span>Previous Layer</span>
+            </div>
+          </button>
+          
+
+          <button  id="makeAllNodesVisibleButton" class="topbar-button">
+            <div class="icon-container">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="white" d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64c-7.1 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3z"/></svg>
+            </div>
+            <div class="text-container">
+                <span>Unhide Nodes</span>
+            </div>
+          </button>
+
+          <button  id="invisibleButton" class="topbar-button">
+            <div class="icon-container">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="white" d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c8.4-19.3 10.6-41.4 4.8-63.3c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zM373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5L373 389.9z"/></svg>
+            </div>
+            <div class="text-container">
+                <span>Hide Nodes</span>
+            </div>
+          </button>
+        
+          <button  id="infoButton" class="topbar-button">
+            <div class="icon-container">
+            
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="white" d="M48 80a48 48 0 1 1 96 0A48 48 0 1 1 48 80zM0 224c0-17.7 14.3-32 32-32H96c17.7 0 32 14.3 32 32V448h32c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H64V256H32c-17.7 0-32-14.3-32-32z"/></svg>
+
+        </div>
+            <div class="text-container">
+                <span>Info</span>
+            </div>
+          </button>
+
+
+
+
+    </div>  
+
+    <button id="collapseExpandButton" class="collapse-expand-button">
+      <svg viewBox="0 0 24 24" fill="currentColor" class="arrow-icon"> 
+        <path fill="white"  d="M7.41 15.41L12 10.83l4.59 4.59L18 14l-6-6-6 6z"/>
+      </svg>
+  </button>
+
+    
+
+  
+
+    <div class="sidebar" id="sidebar">
+        <h2> Auto Layouts</h2>
+        <!-- Initial layout buttons -->
+        <button id="3d-layouts" class="layout-main-btn"><i class="fas fa-cube"></i> 3D Layouts</button>
+        <button id="2d-layouts" class="layout-main-btn"><i class="fas fa-square"></i> 2D Layouts</button>
+        
+        <!-- 3D and 2D option buttons, initially hidden -->
+        <button id="3d-option-1" class="layout-option-btn" style="display: none;">Spring</button>
+        <button id="3d-option-2" class="layout-option-btn" style="display: none;">Spectral</button>
+        <button id="3d-option-3" class="layout-option-btn" style="display: none;">Kamaii</button>
+        <button id="3d-option-4" class="layout-option-btn" style="display: none;">Circle</button>
+  
+        <button id="2d-option-1" class="layout-option-btn" style="display: none;">Spring</button>
+        <button id="2d-option-2" class="layout-option-btn" style="display: none;">Circle</button>
+        <button id="2d-option-3" class="layout-option-btn" style="display: none;">Kamaii</button>
+        <button id="2d-option-4" class="layout-option-btn" style="display: none;">Planar</button>
+        <button id="2d-option-5" class="layout-option-btn" style="display: none;">Spiral</button>
+        <!-- Back button -->
+        <button id="back-button" class="back-btn" style="display: none;">Back</button>
+
+        <div class="status-information">
+          <h2>Status Information</h2>
+          <p>Viewing Plane: <span id="current-plane">XY</span></p>
+          <p>Plane Index: <span id="plane-index">0</span></p>
+          <p>Edge Creation: <span id="current-mode">Not Creating Edge</span></p>
+          <p>Orbital Controls (O): <span id="orb-mode">Disabled</span></p>
+          <p>Node Drag Controls (M): <span id="drag-mode">Disabled</span></p>
+      </div>
+
+      <div class="status-information">
+        <button id="latexButton">Save As LaTeX</button>
+        <button id="pdfButton">Save As PDF</button>
+    </div>
+      
+    </div>
+
+
+    <div id="edgeEditDialog" class="dialog">
+      <h2>Edit Edge</h2>
+        <textarea id="edgeLabel" rows="2" cols="20"></textarea><br>
+        <button id="changeEdgeLabelButton">Change Label</button>
+        <button id="deleteEdgeButton">Delete Edge</button>
+    </div>
+
+    <div id="nodeEditDialog" class="dialog">
+      <h2>Edit Node</h2>
+        <textarea id="nodeLabel" rows="2" cols="20"></textarea><br>
+        <button id="changeNodeLabelButton">Change Label</button>
+        <button id="deleteNodeButton">Delete Node</button>
+    </div>
+
+  <!-- Welcome Screen Overlay -->
+  <div id="welcomeScreen" class="welcome-overlay">
+    <div class="welcome-content">
+        <h1>Welcome To Comm<span>ED</span></h1>
+        <ul>
+            <li>Click,DoubleClick, drag, zoom, pan (WASD keys in 2D), and navigate 2D layers (Next/Previous Layer buttons).</li>
+            <li>Create, edit, and connect nodes with intuitive actions and sidebar tools.</li>
+            <li>Toggle views between dynamic 2D and immersive 3D for comprehensive exploration.</li>
+            <li>Adjust viewing angles in 3D ('O'), position nodes precisely ('M'), and create edges ('Q') effortlessly.</li>
+            <li>Control graph visibility: Easily hide or show all nodes with a single click.</li>
+            <li>Make use of an array of 2D and 3D layouting algorthms for improved readability.</li>
+            <li>Export your graph to LaTeX for documentation or presentations.</li>
+        </ul>
+        <div class="note">
+          <p>Please note: The first time you use the graph layout, it may take a few seconds longer as it needs to be fetched from the server.</p>
+      </div>
+        
+        <button id="getStartedButton">Dive In</button>
+    </div>
+
+  
+</div>
+
+
+    
+
+
+    <div id="3d-graph">
+      
+        <!-- 3D graph will be rendered here -->
+    </div>
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const backButton = document.getElementById('back-button');
+            const layoutMainButtons = document.querySelectorAll('.layout-main-btn');
+            const layoutOptionButtons = document.querySelectorAll('.layout-option-btn');
+
+            // Function to hide or show elements
+            function toggleDisplay(elements, displayStyle) {
+                elements.forEach(element => {
+                    element.style.display = displayStyle;
+                });
+            }
+
+            // Show 3D or 2D options
+            function showLayoutOptions(is3D) {
+                toggleDisplay(layoutMainButtons, 'none'); // Hide main buttons
+                toggleDisplay(is3D ? document.querySelectorAll('.layout-option-btn[id^="3d-"]') : document.querySelectorAll('.layout-option-btn[id^="2d-"]'), 'block'); // Show 3D or 2D options
+                backButton.style.display = 'block'; // Show back button
+            }
+
+            // Setup button listeners
+            document.getElementById('3d-layouts').addEventListener('click', () => showLayoutOptions(true));
+            document.getElementById('2d-layouts').addEventListener('click', () => showLayoutOptions(false));
+
+            backButton.addEventListener('click', function() {
+                toggleDisplay(layoutMainButtons, 'block'); // Show main buttons
+                toggleDisplay(layoutOptionButtons, 'none'); // Hide all option buttons
+                this.style.display = 'none'; // Hide back button
+            });
+        });
+    </script>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const topBar = document.querySelector('.topbar');
+    const collapseExpandButton = document.getElementById('collapseExpandButton');
+    const arrowIcon = collapseExpandButton.querySelector('.arrow-icon');
+    let isCollapsed = false;
+
+    collapseExpandButton.addEventListener('click', function() {
+        isCollapsed = !isCollapsed;
+        if (isCollapsed) {
+            topBar.style.top = `-${topBar.offsetHeight}px`; // Move top bar out of view based on its height
+            arrowIcon.classList.add('rotate-arrow'); // Rotate arrow to point down
+        } else {
+            topBar.style.top = '0'; // Move top bar back into view
+            arrowIcon.classList.remove('rotate-arrow'); // Rotate arrow to point up
+        }
+    });
+});
+
+
+  </script>
+  
+    
+ 
+
+    <!-- Webpack injection -->
+</body>
+</html>

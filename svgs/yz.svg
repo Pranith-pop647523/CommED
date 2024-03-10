@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 50px;
+        font-family: Arial;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <text id="YZ" class="cls-1" transform="translate(11.282 229.253) scale(4.424)">YZ</text>
+</svg>

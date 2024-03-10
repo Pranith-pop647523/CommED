@@ -1,0 +1,311 @@
+.sidebar {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 200px; 
+    height: 100%;
+    bottom: 0;
+    background-color: #111;
+    padding: 20px;
+    color: white;
+}
+
+.sidebar h2 {
+    padding: 20px 0;
+    font: 300 24px/1.5 "Helvetica Neue", sans-serif;
+    font-size: 22px;
+    color: #ecf0f1;
+    border-bottom: 1px solid #7f8c8d;
+}
+
+.sidebar button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #ecf0f1;
+    background-color: #222;
+    text-align: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.sidebar button:hover {
+    background: #2980b9;
+}
+
+.save-button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.button-container {
+    display: none; 
+}
+
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%; 
+    background-color: #111;
+    padding: 10px 10px;
+    color: white;
+    z-index: 100; 
+    transition: ease top 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    border-radius: 0 0 10px 10px;
+}
+
+
+.collapse-expand-button {
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #111; 
+    border-radius: 50%; 
+    width: 40px; 
+    height: 40px; 
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 101; 
+}
+
+/* Rotation class for the arrow */
+.rotate-arrow {
+    transform: rotate(180deg);
+}
+
+
+
+
+
+
+
+.topbar h1 {
+    font-size: 24px;
+    color: #ecf0f1;
+    margin: 0; 
+}
+
+.topbar .topbar-actions {
+    display: flex;
+    align-items: center;
+}
+
+.topbar-button {
+    background: none;
+    border: none;
+    color: white;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    cursor: pointer;
+    font-size: 16px;  
+    padding: 5px;  
+}
+
+.icon-container {
+    width: 24px; 
+    height: 24px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4px; /* Space between icon and text */
+}
+
+.text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.icon-container svg {
+    width: 100%;
+    height: 100%;
+}
+
+
+.icon-container .fa-regular {
+    font-size: inherit; 
+}
+
+.topbar-button:hover {
+    background-color: #444; /* Darker background on hover */
+    transition: background-color 0.3s ease;
+}
+
+.note p {
+    font-size: 14px;  
+    color: #ccc; 
+    margin-top: 20px; 
+    text-align: center; 
+    padding: 0 20px; 
+}
+
+
+
+/* Dialog general styling */
+.dialog {
+    position: absolute;
+    background-color: #111; 
+    border: none;
+    border-radius: 8px; 
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    color: #fff; 
+    display: flex;
+    flex-direction: column; 
+    align-items: stretch; 
+    max-width: 300px; 
+}
+
+.dialog h2 {
+    
+    font: 300 24px/1.5 "Helvetica Neue", sans-serif;
+    font-size: 22px;
+    color: #ecf0f1;
+    border-bottom: 1px solid #7f8c8d;
+}
+
+/* Textarea styling */
+.dialog textarea {
+    background-color: #222; 
+    color: #fff; 
+    border: 1px solid #444; /* subtle border for the textarea */
+    border-radius: 4px; /* Slight rounding on corners */
+    padding: 10px; 
+    margin-bottom: 10px; 
+    
+}
+
+/* Button styling */
+.dialog button {
+    background-color: #333; 
+    color: #fff; 
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 5px; 
+    cursor: pointer; /*  clickable */
+    transition: background-color 0.3s; /* Smooth background color transition on hover */
+}
+
+.dialog button:hover {
+    background: #2980b9;/* Slightly lighter on hover */
+}
+
+
+.dialog button:before {
+    font-family: "Font Awesome 5 Free";
+    display: inline-block;
+    margin-right: 10px; 
+    
+}
+.status-information {
+    margin-top: 20px; 
+    padding-top: 10px; 
+    border-top: 1px solid #7f8c8d; 
+}
+
+.status-information p {
+    font: 300 24px/1.5 "Helvetica Neue", sans-serif;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.status-information span {
+    font: 300 16px "Helvetica Neue", sans-serif;
+    color: #3498db; /* A brighter color for the dynamic parts */
+}
+.status h2 {
+    padding: 20px 0;
+    font: 300 24px/1.5 "Helvetica Neue", sans-serif;
+    font-size: 22px;
+    color: #ecf0f1;
+    border-bottom: 1px solid #7f8c8d;
+}
+/* Welcome Screen Overlay */
+.welcome-overlay {
+    font: 300 15px/1.5 "Helvetica Neue", sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000; /* Ensure its above everything else */
+  }
+  
+  .welcome-content {
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .welcome-content h1 {
+    margin-top: 0;
+    font: 300 24px/1.5 "Helvetica Neue", sans-serif;
+  }
+
+  .welcome-content span{
+    font: 300 24px/1.5 "Helvetica Neue", sans-serif;
+    color: #3498db;
+  }
+  
+  .welcome-content ul {
+    text-align: left;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .welcome-content ul li::before {
+    content: "• ";
+    color: #3498db; 
+    font-weight: bold;
+  }
+  
+  .welcome-content button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font: 300 16px/1.5 "Helvetica Neue", sans-serif;
+  }
+  
+  .welcome-content button:hover {
+    background: #2980b9;
+  }
+  
+
+
+#edgeEditDialog {
+    display: none;
+    
+}
+#nodeEditDialog {
+    display: none;
+    
+}
